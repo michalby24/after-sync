@@ -1,5 +1,38 @@
 # Changelog
 
+## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.1...v0.1.1-rc.3) (2026-01-22)
+
+
+### Bug Fixes
+
+* update token usage in sync workflow for consistency ([d366180](https://github.com/michalby24/after-sync/commit/d3661804673582acdc55c208c74653e579625365))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([d543921](https://github.com/michalby24/after-sync/commit/d543921fc8f45b594d3268857f0b1d834ddc8e31))
+* enforce correct rc version ([f50c0c4](https://github.com/michalby24/after-sync/commit/f50c0c4020f7ad20a891bb5fcd9a27d7d82fa77b))
+
+## [0.1.1-rc.1](https://github.com/michalby24/after-sync/compare/v0.1.0-rc.2...v0.1.1-rc.1) (2026-01-22)
+
+
+### Features
+
+* next ([1987634](https://github.com/michalby24/after-sync/commit/1987634073010418045a034f0bf802458017b2ab))
+
+
+### Bug Fixes
+
+* test ([b3f52cb](https://github.com/michalby24/after-sync/commit/b3f52cb4dc5f54a1c7e77415207a8bbcacc6586b))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([802d8eb](https://github.com/michalby24/after-sync/commit/802d8eb1744ca6d45853aa7206446becbdc3c97a))
+* enforce correct rc version ([86b8614](https://github.com/michalby24/after-sync/commit/86b86145c1e7c6e1ebf76330e40fdd0b0d19b967))
+* enforce correct rc version ([bd604e0](https://github.com/michalby24/after-sync/commit/bd604e032e7be702c638ed4c2a5c3c95ea21f1a8))
+* enforce correct rc version ([d1b4652](https://github.com/michalby24/after-sync/commit/d1b4652ad3084df0596879eef9cdd3c168c88bd3))
+
 ## [0.1.0](https://github.com/michalby24/after-sync/compare/v0.1.0-rc.2...v0.1.0) (2026-01-22)
 
 
