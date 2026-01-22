@@ -94,24 +94,17 @@ runs:
       run: |
         echo "Checking for existing release PRs on branch ${{ github.ref_name }}..."
         
-        PR_DATA=$(gh pr list \
+        PR_NUMBER=$(gh pr list \
           --base "${{ github.ref_name }}" \
           --label "autorelease: pending" \
-          --json number,state \
-          --jq '.[0]')
+          --json number \
+          --jq '.[0].number')
 
-        if [ -n "$PR_DATA" ] && [ "$PR_DATA" != "null" ]; then
-          PR_NUMBER=$(echo "$PR_DATA" | jq -r '.number')
-          PR_STATE=$(echo "$PR_DATA" | jq -r '.state')
-          
-          if [ "$PR_STATE" == "OPEN" ]; then
-            echo "Found open stale release PR #$PR_NUMBER. Closing it to force a fresh regeneration..."
-            gh pr close "$PR_NUMBER" --delete-branch
-          else
-            echo "Found release PR #$PR_NUMBER but it's already $PR_STATE. Skipping."
-          fi
+        if [ -n "$PR_NUMBER" ]; then
+          echo "Found stale release PR #$PR_NUMBER. Closing it to force a fresh regeneration..."
+          gh pr close "$PR_NUMBER" --delete-branch
         else
-          echo "No open release PRs found."
+          echo "No stale release PRs found."
         fi
 
     - name: set release type
