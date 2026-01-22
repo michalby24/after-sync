@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.1...v0.1.1-rc.3) (2026-01-22)
+
+
+### Bug Fixes
+
+* update token usage in sync workflow for consistency ([d366180](https://github.com/michalby24/after-sync/commit/d3661804673582acdc55c208c74653e579625365))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([d543921](https://github.com/michalby24/after-sync/commit/d543921fc8f45b594d3268857f0b1d834ddc8e31))
+* enforce correct rc version ([f50c0c4](https://github.com/michalby24/after-sync/commit/f50c0c4020f7ad20a891bb5fcd9a27d7d82fa77b))
+
 ## [0.1.1-rc.1](https://github.com/michalby24/after-sync/compare/v0.1.0-rc.2...v0.1.1-rc.1) (2026-01-22)
 
 
