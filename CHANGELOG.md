@@ -10,6 +10,20 @@
 
 ### Miscellaneous Chores
 
+* enforce correct rc version ([86b8614](https://github.com/michalby24/after-sync/commit/86b86145c1e7c6e1ebf76330e40fdd0b0d19b967))
+* enforce correct rc version ([bd604e0](https://github.com/michalby24/after-sync/commit/bd604e032e7be702c638ed4c2a5c3c95ea21f1a8))
+* enforce correct rc version ([d1b4652](https://github.com/michalby24/after-sync/commit/d1b4652ad3084df0596879eef9cdd3c168c88bd3))
+
+## [0.1.0](https://github.com/michalby24/after-sync/compare/v0.1.0-rc.2...v0.1.0) (2026-01-22)
+
+
+### Features
+
+* next ([1987634](https://github.com/michalby24/after-sync/commit/1987634073010418045a034f0bf802458017b2ab))
+
+
+### Miscellaneous Chores
+
 * enforce correct rc version ([bd604e0](https://github.com/michalby24/after-sync/commit/bd604e032e7be702c638ed4c2a5c3c95ea21f1a8))
 * enforce correct rc version ([d1b4652](https://github.com/michalby24/after-sync/commit/d1b4652ad3084df0596879eef9cdd3c168c88bd3))
 
