@@ -1,16 +1,48 @@
 # Changelog
 
-## [0.1.1](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.3...v0.1.1) (2026-01-22)
+## [0.2.0-rc.4](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.3...v0.2.0-rc.4) (2026-01-22)
 
 
 ### Bug Fixes
 
-* test ([16c7188](https://github.com/michalby24/after-sync/commit/16c7188039e19eaec958eb7a6ed4d07d2dcedad0))
+* streamline stale release PR handling in action.yaml ([900c33a](https://github.com/michalby24/after-sync/commit/900c33a8e7dda6a7830ef364008778b9c75c0bf9))
 
 
 ### Miscellaneous Chores
 
-* enforce correct rc version ([f1b4df3](https://github.com/michalby24/after-sync/commit/f1b4df31b86d0195cc0e62a9b8c2149953f9e98f))
+* enforce correct rc version ([a5f192a](https://github.com/michalby24/after-sync/commit/a5f192afb6267c96d58ce0d416f0cd4b3a601991))
+* enforce correct rc version ([3e3a94d](https://github.com/michalby24/after-sync/commit/3e3a94ddf68a2583d78c58db06679b19fac439d2))
+
+## [0.2.0-rc.3](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.2...v0.2.0-rc.3) (2026-01-22)
+
+
+### Features
+
+* enhance skip logic for release commits in action.yaml ([b2f9b0a](https://github.com/michalby24/after-sync/commit/b2f9b0a77c7d71b9592022b4dbef056a7262de50))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([17771e8](https://github.com/michalby24/after-sync/commit/17771e8638493fc358a8f6c1b746f7a9fce9e064))
+* enforce correct rc version ([41324f0](https://github.com/michalby24/after-sync/commit/41324f0e3e1d448bced88ccbf75e28998a9ce337))
+
+## [0.2.0-rc.2](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.3...v0.2.0-rc.2) (2026-01-22)
+
+
+### Features
+
+* commit ([213a3f6](https://github.com/michalby24/after-sync/commit/213a3f640aa1e0821f7ccb8d2e2a4d5ba082d0c9))
+
+
+### Bug Fixes
+
+* simplify git push command in sync workflow ([3c856da](https://github.com/michalby24/after-sync/commit/3c856da688e896c7fb907d9915735870b5a3bac3))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([61df12e](https://github.com/michalby24/after-sync/commit/61df12ecd8823f8c7fdf29a4a56012e7ba29880c))
+* enforce correct rc version ([e8cd8d9](https://github.com/michalby24/after-sync/commit/e8cd8d9ba2391acb2b175b3659ad3cc2f6ef0623))
 * enforce correct rc version ([28d49da](https://github.com/michalby24/after-sync/commit/28d49dae787cb1b33205ee8aeba3d14944aa5963))
 
 ## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.1...v0.1.1-rc.3) (2026-01-22)

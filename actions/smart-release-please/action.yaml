@@ -94,24 +94,17 @@ runs:
       run: |
         echo "Checking for existing release PRs on branch ${{ github.ref_name }}..."
         
-        PR_DATA=$(gh pr list \
+        PR_NUMBER=$(gh pr list \
           --base "${{ github.ref_name }}" \
           --label "autorelease: pending" \
-          --json number,state \
-          --jq '.[0]')
+          --json number \
+          --jq '.[0].number')
 
-        if [ -n "$PR_DATA" ] && [ "$PR_DATA" != "null" ]; then
-          PR_NUMBER=$(echo "$PR_DATA" | jq -r '.number')
-          PR_STATE=$(echo "$PR_DATA" | jq -r '.state')
-          
-          if [ "$PR_STATE" == "OPEN" ]; then
-            echo "Found open stale release PR #$PR_NUMBER. Closing it to force a fresh regeneration..."
-            gh pr close "$PR_NUMBER" --delete-branch
-          else
-            echo "Found release PR #$PR_NUMBER but it's already $PR_STATE. Skipping."
-          fi
+        if [ -n "$PR_NUMBER" ]; then
+          echo "Found stale release PR #$PR_NUMBER. Closing it to force a fresh regeneration..."
+          gh pr close "$PR_NUMBER" --delete-branch
         else
-          echo "No open release PRs found."
+          echo "No stale release PRs found."
         fi
 
     - name: set release type
@@ -128,7 +121,10 @@ runs:
       id: skip_on_release
       shell: bash
       run: |
-        if [[ "${{ github.event.head_commit.message }}" == "chore(main): release"* || "${{ github.event.head_commit.message }}" == "chore(next): release"* || "${{ github.event.head_commit.message }}" == "chore: release"* ]]; then
+        LAST_MSG=$(git log -1 --pretty=%s)
+        echo "Last commit message: $LAST_MSG"
+
+        if [[ "$LAST_MSG" == "chore(main): release"* || "$LAST_MSG" == "chore(next): release"* || "$LAST_MSG" == "chore: release"* ]]; then
           echo "This is a release commit, skipping."
           echo "skip=true" >> $GITHUB_OUTPUT
         else
@@ -137,7 +133,7 @@ runs:
         fi
 
     - name: Run release-please
-      if: env.SKIP_RELEASE != 'true'
+      if: env.SKIP_RELEASE != 'true' && steps.skip_on_release.outputs.skip != 'true'
       uses: googleapis/release-please-action@v4
       with:
         token: ${{ inputs.token }}
