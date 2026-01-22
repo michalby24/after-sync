@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.2.0-rc.2](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.3...v0.2.0-rc.2) (2026-01-22)
+
+
+### Features
+
+* commit ([213a3f6](https://github.com/michalby24/after-sync/commit/213a3f640aa1e0821f7ccb8d2e2a4d5ba082d0c9))
+
+
+### Bug Fixes
+
+* simplify git push command in sync workflow ([3c856da](https://github.com/michalby24/after-sync/commit/3c856da688e896c7fb907d9915735870b5a3bac3))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([61df12e](https://github.com/michalby24/after-sync/commit/61df12ecd8823f8c7fdf29a4a56012e7ba29880c))
+* enforce correct rc version ([e8cd8d9](https://github.com/michalby24/after-sync/commit/e8cd8d9ba2391acb2b175b3659ad3cc2f6ef0623))
+* enforce correct rc version ([28d49da](https://github.com/michalby24/after-sync/commit/28d49dae787cb1b33205ee8aeba3d14944aa5963))
+
 ## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.1...v0.1.1-rc.3) (2026-01-22)
 
 
