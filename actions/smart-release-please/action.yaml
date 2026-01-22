@@ -128,7 +128,10 @@ runs:
       id: skip_on_release
       shell: bash
       run: |
-        if [[ "${{ github.event.head_commit.message }}" == "chore(main): release"* || "${{ github.event.head_commit.message }}" == "chore(next): release"* || "${{ github.event.head_commit.message }}" == "chore: release"* ]]; then
+        LAST_MSG=$(git log -1 --pretty=%s)
+        echo "Last commit message: $LAST_MSG"
+
+        if [[ "$LAST_MSG" == "chore(main): release"* || "$LAST_MSG" == "chore(next): release"* || "$LAST_MSG" == "chore: release"* ]]; then
           echo "This is a release commit, skipping."
           echo "skip=true" >> $GITHUB_OUTPUT
         else
@@ -137,7 +140,7 @@ runs:
         fi
 
     - name: Run release-please
-      if: env.SKIP_RELEASE != 'true'
+      if: env.SKIP_RELEASE != 'true' && steps.skip_on_release.outputs.skip != 'true'
       uses: googleapis/release-please-action@v4
       with:
         token: ${{ inputs.token }}
