@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.3...v0.1.1-rc.3) (2026-01-22)
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([28d49da](https://github.com/michalby24/after-sync/commit/28d49dae787cb1b33205ee8aeba3d14944aa5963))
+
 ## [0.1.1-rc.3](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.1...v0.1.1-rc.3) (2026-01-22)
 
 
