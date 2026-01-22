@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0-rc.3](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.2...v0.2.0-rc.3) (2026-01-22)
+
+
+### Features
+
+* enhance skip logic for release commits in action.yaml ([b2f9b0a](https://github.com/michalby24/after-sync/commit/b2f9b0a77c7d71b9592022b4dbef056a7262de50))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([17771e8](https://github.com/michalby24/after-sync/commit/17771e8638493fc358a8f6c1b746f7a9fce9e064))
+* enforce correct rc version ([41324f0](https://github.com/michalby24/after-sync/commit/41324f0e3e1d448bced88ccbf75e28998a9ce337))
+
 ## [0.2.0-rc.2](https://github.com/michalby24/after-sync/compare/v0.1.1-rc.3...v0.2.0-rc.2) (2026-01-22)
 
 
