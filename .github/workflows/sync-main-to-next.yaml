@@ -21,7 +21,7 @@ jobs:
           ref: next
           # We need full history to fetch main correctly
           fetch-depth: 0
-          token: ${{ secrets.GH_PAT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Hard Reset Next to Main
         run: |
@@ -34,4 +34,4 @@ jobs:
           git reset --hard origin/main
           echo "Force pushing to next..."
           # Force push is required because we rewrote history
-          git push origin next --force
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git next --force
