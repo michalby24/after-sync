@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0-rc.4](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.3...v0.2.0-rc.4) (2026-01-22)
+
+
+### Bug Fixes
+
+* streamline stale release PR handling in action.yaml ([900c33a](https://github.com/michalby24/after-sync/commit/900c33a8e7dda6a7830ef364008778b9c75c0bf9))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([a5f192a](https://github.com/michalby24/after-sync/commit/a5f192afb6267c96d58ce0d416f0cd4b3a601991))
+* enforce correct rc version ([3e3a94d](https://github.com/michalby24/after-sync/commit/3e3a94ddf68a2583d78c58db06679b19fac439d2))
+
 ## [0.2.0-rc.3](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.2...v0.2.0-rc.3) (2026-01-22)
 
 
