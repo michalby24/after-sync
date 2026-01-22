@@ -34,4 +34,4 @@ jobs:
           git reset --hard origin/main
           echo "Force pushing to next..."
           # Force push is required because we rewrote history
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git next --force
+          git push origin next --force
