@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0-rc.6](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.4...v0.2.0-rc.6) (2026-01-22)
+
+
+### Bug Fixes
+
+* update merge condition to exclude pull requests from triggering release on main ([1065f22](https://github.com/michalby24/after-sync/commit/1065f22311fee5ac83847e41d8f8d5c529645178))
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([90c6882](https://github.com/michalby24/after-sync/commit/90c68820b51c846e65e3efae2c458e1df6786b56))
+* enforce correct rc version ([dbcd2eb](https://github.com/michalby24/after-sync/commit/dbcd2ebcdd61530c97732a7a81980fd71c12e9e2))
+
 ## [0.2.0-rc.4](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.3...v0.2.0-rc.4) (2026-01-22)
 
 
