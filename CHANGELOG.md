@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0-rc.5](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.4...v0.2.0-rc.5) (2026-01-22)
+
+
+### Miscellaneous Chores
+
+* enforce correct rc version ([dbcd2eb](https://github.com/michalby24/after-sync/commit/dbcd2ebcdd61530c97732a7a81980fd71c12e9e2))
+
 ## [0.2.0-rc.4](https://github.com/michalby24/after-sync/compare/v0.2.0-rc.3...v0.2.0-rc.4) (2026-01-22)
 
 
